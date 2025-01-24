@@ -1,0 +1,28 @@
+/* src/components/Inicio.css */
+.inicio-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.inicio-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+
+    .inicio-image {
+        max-width: 100%; 
+        max-height: 60vh; 
+    }
+}
