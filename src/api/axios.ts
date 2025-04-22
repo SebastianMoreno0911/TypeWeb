@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://fleet-advantage-ap1-v2-staging.azurewebsites.net", // Cambia por la URL de tu API
+    baseURL: "https://.com", // Cambia por la URL de tu API
 });
 
 api.interceptors.request.use(
