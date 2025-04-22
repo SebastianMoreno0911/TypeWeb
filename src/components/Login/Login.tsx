@@ -14,11 +14,12 @@ const Login = () => {
 
     const navigate = useNavigate(); // Inicializa useNavigate con este navego entre ventanas si se comprueba el token
 
-    const EXPO_PUBLIC_CLIENT_ID = "f8d4384a-4398-4f23-9a7a-da5b88675a0e";
-    const EXPO_PUBLIC_CLIENT_SECRET = "6a2947c8-e89d-4cc4-9f6e-92dd1712ffed";
-    const EXPO_PUBLIC_GRANT_TYPE = "password";
-    const EXPO_PUBLIC_USERNAME = "jhmusa1@hotmail.com";
-    const EXPO_PUBLIC_PASSWORD = "2021Fl3etAdv@ntage";
+    //aqui o cambias por valores reales o haces el import e instalas dotenv (revisar esta parte en Readme)
+    const EXPO_PUBLIC_CLIENT_ID = process.env.EXPO_PUBLIC_CLIENT_ID!;
+    const EXPO_PUBLIC_CLIENT_SECRET = process.env.EXPO_PUBLIC_CLIENT_SECRET!;
+    const EXPO_PUBLIC_GRANT_TYPE = process.env.EXPO_PUBLIC_GRANT_TYPE!;
+    const EXPO_PUBLIC_USERNAME = process.env.EXPO_PUBLIC_USERNAME!;
+    const EXPO_PUBLIC_PASSWORD = process.env.EXPO_PUBLIC_PASSWORD!;
 
     const handleLogin = async () => {
         try {
